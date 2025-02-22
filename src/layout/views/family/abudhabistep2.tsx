@@ -10,6 +10,7 @@ export const Abudabisteps = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" }, // Stack vertically on small screens, side-by-side on larger
           width: "100%", // Full width of the viewport
+          overflow: "hidden", // Prevents any scroll from appearing
           minHeight: "auto", // Dynamically adjusts height according to content
           alignItems: "stretch", // Ensures both sides stretch to fit the container
         }}
@@ -22,15 +23,16 @@ export const Abudabisteps = () => {
             justifyContent: "center", // Horizontally center the image
             alignItems: "center", // Vertically center the image
             height: "100%", // Ensure image box takes up available height
+            overflow: "hidden", // Prevents scroll from the image side
           }}
         >
           <img
             src={img}
-            alt="Person with glasses"
+            alt="Family Visa Process"
             style={{
-              width: "100%", // Make the image responsive, take full width
+              maxWidth: "100%", // Ensure the image takes full available width
               height: "auto", // Maintain aspect ratio
-              objectFit: "contain", // Ensure image fits well within the container
+              objectFit: "cover", // Ensure image fits within the container
             }}
           />
         </Box>
@@ -45,6 +47,7 @@ export const Abudabisteps = () => {
             justifyContent: "center", // Center content vertically
             padding: { xs: "20px", md: "40px" }, // Padding adjusts based on screen size
             height: "100%", // Ensure content box takes up available height
+            overflowY: "auto", // Allows vertical scrolling if the content overflows on small screens
           }}
         >
           {/* Headings and paragraphs */}
@@ -53,7 +56,8 @@ export const Abudabisteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "3rem", color: "blue" },
+              fontSize: { xs: "1.5rem", md: "3rem" },
+              color: "blue",
             }}
           >
             Business Setup and Documents Clearing?
@@ -77,10 +81,11 @@ export const Abudabisteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "2.5rem", color: "#FF6347" },
+              fontSize: { xs: "1.5rem", md: "2.5rem" },
+              color: "#FF6347",
             }}
           >
-            Eligibility for Family Visa in Abu Dhabi:{" "}
+            Eligibility for Family Visa in Abu Dhabi:
           </Typography>
 
           <Typography
@@ -88,25 +93,27 @@ export const Abudabisteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: ".5rem", md: "1rem" },
+              fontSize: { xs: "0.9rem", md: "1rem" },
             }}
           >
             You can apply for a family visa in Abu Dhabi if you hold an
             employment visa or a businessman visa. The minimum salary required
             to apply for family status is AED 5,000 plus accommodation or AED
-            6,000.:{" "}
+            6,000.
           </Typography>
+
           <Typography
             variant="body1"
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: ".5rem", md: "1rem" },
+              fontSize: { xs: "0.9rem", md: "1rem" },
             }}
           >
             The required documents for your wife and children’s visa application
-            in Abu Dhabi include:{" "}
+            in Abu Dhabi include:
           </Typography>
+
           <Typography
             variant="body1"
             sx={{
@@ -126,7 +133,9 @@ export const Abudabisteps = () => {
               </li>
               <li>Copies of the dependents’ passports</li>
               <li>Original passports</li>
-              <li>2 photographs for each dependent with a white background</li>
+              <li>
+                2 photographs for each dependent with a white background
+              </li>
               <li>
                 Sponsor’s original labor contract and salary certificate in
                 Arabic from the employer
@@ -138,6 +147,7 @@ export const Abudabisteps = () => {
               <li>Sponsor’s original passport</li>
             </ul>
           </Typography>
+
           <Typography
             variant="h3"
             fontWeight="bold"
@@ -146,7 +156,6 @@ export const Abudabisteps = () => {
             Types of VISA
           </Typography>
 
-          {/* Unordered List */}
           <ul style={{ paddingLeft: "20px", marginBottom: "16px" }}>
             <li
               style={{ fontSize: "1rem", lineHeight: 1.6, fontWeight: "bold" }}
@@ -178,19 +187,21 @@ export const Abudabisteps = () => {
           </ul>
         </Box>
       </Box>
+
+      {/* Visa Process Section */}
       <Typography variant="h4" align="center" paddingTop="24px">
         The Visa Application Process:
-       
       </Typography>
-      <Typography
-        variant="body1"
-        align="left"
-        style={{ paddingTop: "24px" }}
-      >
+
+      <Typography variant="body1" align="left" style={{ paddingTop: "24px" }}>
         <div
-          style={{ maxWidth: "600px", margin: "0 auto", textAlign: "justify" }}
+          style={{
+            maxWidth: "600px",
+            margin: "0 auto",
+            textAlign: "justify",
+          }}
         >
-          <ul style={{  padding: 0 }}>
+          <ul style={{ padding: 0 }}>
             <li>
               <strong>Contact Us:</strong> Reach out to us now to kickstart your
               dream journey to the UAE. We’re here to assist you every step of
@@ -224,13 +235,8 @@ export const Abudabisteps = () => {
             <li>Apply for Emirates ID if not already done.</li>
             <li>Complete the residence visa stamping process.</li>
             <li>
-              Note: In case of a failed medical examination, immediate departure
+              <strong>Note:</strong> In case of a failed medical examination, immediate departure
               may be required if individuals are found unfit post-examination.
-            </li>
-            <li>
-              Need help with your Abu Dabi visa application? Business Setup is
-              here for you. Our experts ensure a hassle-free process. Get in
-              touch today!
             </li>
           </ul>
         </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import img from '../../../component/assets/image/desktopsideimages2.png'; // Ensure the path to your image is correct
@@ -12,6 +11,7 @@ export const Omansteps2 = () => {
                 width: '100%', // Full width of the viewport
                 minHeight: 'auto', // Dynamically adjusts height according to content
                 alignItems: 'stretch', // Ensures both sides stretch to fit the container
+                overflowX: 'hidden', // Prevent horizontal overflow
             }}
         >
             {/* Left Side Image */}
@@ -22,6 +22,7 @@ export const Omansteps2 = () => {
                     justifyContent: 'center', // Horizontally center the image
                     alignItems: 'center', // Vertically center the image
                     height: '100%', // Ensure image box takes up available height
+                    overflow: 'hidden', // Prevent the image from causing overflow
                 }}
             >
                 <img
@@ -30,7 +31,8 @@ export const Omansteps2 = () => {
                     style={{
                         width: '100%', // Make the image responsive, take full width
                         height: 'auto', // Maintain aspect ratio
-                        objectFit: 'contain', // Ensure image fits well within the container
+                        objectFit: 'cover', // Ensure image fits well within the container
+                        maxWidth: '100%', // Prevents image from overflowing
                     }}
                 />
             </Box>
@@ -39,19 +41,20 @@ export const Omansteps2 = () => {
             <Box
                 sx={{
                     width: { xs: '100%', md: '50%' }, // Full width on small screens, 50% on medium and larger screens
-                    backgroundColor: 'rgba(255, 255, 255, 0.5)', // Half-white background
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)', // Slight transparency for readability
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center', // Center content vertically
                     padding: { xs: '20px', md: '40px' }, // Padding adjusts based on screen size
                     height: '100%', // Ensure content box takes up available height
+                    boxSizing: 'border-box', // Ensures padding doesn't overflow
                 }}
             >
                 {/* Headings and paragraphs */}
                 <Typography
                     variant="h3"
                     fontWeight="bold"
-                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '3rem', color: 'blue' } }}
+                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '3rem' }, color: 'blue' }}
                 >
                     Who is Eligible for the Oman E-Visa?
                 </Typography>
@@ -65,9 +68,9 @@ export const Omansteps2 = () => {
                 <Typography
                     variant="h3"
                     fontWeight="bold"
-                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '2.5rem', color: '#FF6347' } }}
+                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '2.5rem' }, color: '#FF6347' }}
                 >
-                   Required Documents for the Oman eVisa Application
+                    Required Documents for the Oman eVisa Application
                 </Typography>
                 <Typography
                     variant="body1"
@@ -76,25 +79,11 @@ export const Omansteps2 = () => {
                     To ensure a smooth application process, you’ll need the following documents:
                     <ul>
                         <li>Valid Passport: Your passport should be valid for at least six months from the date of your arrival in Oman.</li>
-                        <li>
-                            UAE Residence Permit: A copy of your valid UAE residence permit is mandatory.
-
-                        </li>
-                        <li>
-                            Passport-Sized Photo: A recent passport-sized photograph that meets the visa photo requirements.
-
-                        </li>
-                        <li>
-                            Email Address: An active email address to receive your eVisa.
-
-                        </li>
-                        <li>
-                            Payment Method: A credit or debit card to pay the visa fee online.
-
-                        </li>
+                        <li>UAE Residence Permit: A copy of your valid UAE residence permit is mandatory.</li>
+                        <li>Passport-Sized Photo: A recent passport-sized photograph that meets the visa photo requirements.</li>
+                        <li>Email Address: An active email address to receive your eVisa.</li>
+                        <li>Payment Method: A credit or debit card to pay the visa fee online.</li>
                     </ul>
-
-
                 </Typography>
 
                 <Typography

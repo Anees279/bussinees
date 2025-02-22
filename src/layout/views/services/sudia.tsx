@@ -24,7 +24,7 @@ export const Sudia = () => {
         <Box
             sx={{
                 minHeight: { xs: '100vh', md: '100vh' }, // Full height on small screens
-                width: '98.5vw', // Full width
+                width: '100%', // Full width
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' }, // Column on small screens, row on larger
                 justifyContent: 'space-around',

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import img from "../../../component/assets/image/goldenvisa.jpg"; // Ensure the path to your image is correct
 
-export const Goldenstepst = () => {
+export const Goldensteps = () => {
   return (
     <>
       <Box
@@ -10,8 +10,10 @@ export const Goldenstepst = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" }, // Stack vertically on small screens, side-by-side on larger
           width: "100%", // Full width of the viewport
+          maxWidth: "100vw", // Prevent overflow on smaller devices
           minHeight: "auto", // Dynamically adjusts height according to content
-          alignItems: "stretch", // Ensures both sides stretch to fit the container
+          alignItems: "stretch", // Ensure both sides stretch to fit the container
+          overflowX: "hidden", // Prevent horizontal scroll
         }}
       >
         {/* Left Side Image */}
@@ -26,9 +28,10 @@ export const Goldenstepst = () => {
         >
           <img
             src={img}
-            alt="Person with glasses"
+            alt="Golden Visa"
             style={{
               width: "100%", // Make the image responsive, take full width
+              maxWidth: "100%", // Prevent it from exceeding its container width
               height: "auto", // Maintain aspect ratio
               objectFit: "contain", // Ensure image fits well within the container
             }}
@@ -45,6 +48,7 @@ export const Goldenstepst = () => {
             justifyContent: "center", // Center content vertically
             padding: { xs: "20px", md: "40px" }, // Padding adjusts based on screen size
             height: "100%", // Ensure content box takes up available height
+            overflowX: "hidden", // Avoid horizontal overflow in content
           }}
         >
           {/* Headings and paragraphs */}
@@ -53,7 +57,8 @@ export const Goldenstepst = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "3rem", color: "blue" },
+              fontSize: { xs: "1.5rem", md: "3rem" }, // Adjust font size for responsiveness
+              color: "blue",
             }}
           >
             Golden Residency Visa in UAE
@@ -79,7 +84,8 @@ export const Goldenstepst = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "2.5rem", color: "#FF6347" },
+              fontSize: { xs: "1.5rem", md: "2.5rem" },
+              color: "#FF6347",
             }}
           >
             Our Range of Services
@@ -96,26 +102,21 @@ export const Goldenstepst = () => {
               <li>
                 Golden Residency Visa: Our experienced team is well-versed in
                 all types of Golden Residency Visas, ensuring that you meet the
-                requirements and navigate the procedures seamlessly
+                requirements and navigate the procedures seamlessly.
               </li>
               <li>
-                Visa Services for Dependents: We understand the importance of
-                keeping families together. We specialize in obtaining dependent
-                visas for your loved ones, including spouses, children, parents,
-                and domestic helpers.
+                Visa Services for Dependents: We specialize in obtaining
+                dependent visas for your loved ones, including spouses,
+                children, parents, and domestic helpers.
               </li>
               <li>
-                Document Attestation: We offer comprehensive document
-                attestation services, ensuring that your documents are properly
-                authenticated and accepted by relevant authorities. This
-                includes attestation of educational certificates, marriage
-                certificates, birth certificates, and more.
+                Document Attestation: Comprehensive attestation services for
+                educational, marriage, birth certificates, and more.
               </li>
               <li>
-                Document Clearing: Our experts handle the entire
-                document-clearing process, saving you time and effort. We ensure
-                that all your documents are prepared, verified, and submitted
-                accurately, minimizing delays and complications.
+                Document Clearing: Our experts handle the entire process,
+                ensuring your documents are prepared, verified, and submitted
+                accurately.
               </li>
             </ul>
           </Typography>
@@ -160,6 +161,7 @@ export const Goldenstepst = () => {
           </ul>
         </Box>
       </Box>
+
       <Typography variant="h4" align="center" paddingTop="24px">
         Transparency and Dependability
       </Typography>

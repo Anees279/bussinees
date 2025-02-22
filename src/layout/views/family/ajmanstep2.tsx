@@ -8,10 +8,11 @@ export const Ajamansteps = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" }, // Stack vertically on small screens, side-by-side on larger
+          flexDirection: { xs: "column", md: "row" }, // Stack vertically on small screens, side-by-side on larger screens
           width: "100%", // Full width of the viewport
           minHeight: "auto", // Dynamically adjusts height according to content
           alignItems: "stretch", // Ensures both sides stretch to fit the container
+          overflowX: "hidden", // Prevents any horizontal scrolling
         }}
       >
         {/* Left Side Image */}
@@ -22,15 +23,16 @@ export const Ajamansteps = () => {
             justifyContent: "center", // Horizontally center the image
             alignItems: "center", // Vertically center the image
             height: "100%", // Ensure image box takes up available height
+            overflow: "hidden", // Prevent image overflow
           }}
         >
           <img
             src={img}
-            alt="Person with glasses"
+            alt="Ajman Visa Assistance"
             style={{
               width: "100%", // Make the image responsive, take full width
               height: "auto", // Maintain aspect ratio
-              objectFit: "contain", // Ensure image fits well within the container
+              objectFit: "cover", // Cover the area appropriately
             }}
           />
         </Box>
@@ -53,7 +55,8 @@ export const Ajamansteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "3rem", color: "blue" },
+              fontSize: { xs: "1.5rem", md: "3rem" },
+              color: "blue",
             }}
           >
             Family Visa Assistance:
@@ -78,10 +81,11 @@ export const Ajamansteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: "1.5rem", md: "2.5rem", color: "#FF6347" },
+              fontSize: { xs: "1.5rem", md: "2.5rem" },
+              color: "#FF6347",
             }}
           >
-            Types of UAE Visas & Permits:{" "}
+            Types of UAE Visas & Permits:
           </Typography>
 
           <Typography
@@ -89,10 +93,10 @@ export const Ajamansteps = () => {
             fontWeight="bold"
             sx={{
               mb: 2,
-              fontSize: { xs: ".5rem", md: "1rem" },
+              fontSize: { xs: "0.5rem", md: "1rem" },
             }}
           >
-            Our Ajman Visa services include::{" "}
+            Our Ajman Visa services include:
           </Typography>
 
           <Typography
@@ -105,7 +109,7 @@ export const Ajamansteps = () => {
           >
             <ul>
               <li>Local Employee Visa</li>
-              <li> Free Zone Visa</li>
+              <li>Free Zone Visa</li>
               <li>Immigration / Establishment Card</li>
               <li>Visa Stamping</li>
               <li>Visa Renewal</li>
@@ -124,6 +128,7 @@ export const Ajamansteps = () => {
               <li>Visa Stamping Application</li>
             </ul>
           </Typography>
+
           <Typography
             variant="h3"
             fontWeight="bold"
@@ -164,10 +169,12 @@ export const Ajamansteps = () => {
           </ul>
         </Box>
       </Box>
+
+      {/* Track Your Visa Progress Section */}
       <Typography variant="h4" align="center" paddingTop="24px">
         Track Your Visa Progress:
       </Typography>
-      <Typography variant="body1" align="left" style={{ paddingTop: "24px" }}>
+      <Typography variant="body1" align="left" sx={{ paddingTop: "24px" }}>
         <div
           style={{ maxWidth: "900px", margin: "0 auto", textAlign: "justify" }}
         >

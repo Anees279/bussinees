@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Typography, Button, TextField, MenuItem, Select, InputLabel, FormControl } from '@mui/material';
 import img from '../../../component/assets/image/golden.jpg'; // Ensure the path is correct
 import Goldenstep from './goldenstep1'
-import {Goldenstepst} from './goldenstep2'
+import {Goldensteps} from './goldenstep2'
 const countries = [
     { code: '+92', name: 'Pakistan' },
     { code: '+971', name: 'United Arab Emirates' },
@@ -177,7 +177,7 @@ export const Golden = () => {
             </Box>
         </Box>
         <Goldenstep/>
-        <Goldenstepst/>
+        <Goldensteps/>
         </>
         
     );
