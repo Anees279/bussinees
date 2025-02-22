@@ -43,13 +43,26 @@ const testimonials = [
 const ClientTestimonial = () => {
     return (
         <Box sx={{ backgroundColor: '#f8f8f8', py: 6 }}>
+           
             <Typography
-                variant="h2"
-                align="center"
-                sx={{ mb: 4, fontWeight: 'bold', color: '#FF6347' }}
-            >
-                Client Testimonials
-            </Typography>
+  variant="h2"
+  component="h1"
+  align="center"
+  sx={{
+    fontWeight: "bold",
+    mb: 3,
+    color: "#FF6347",
+    fontSize: {
+      xs: "1.5rem", // For small devices (phones)
+      sm: "2rem",   // For medium devices (tablets)
+      md: "2.5rem", // For large devices (desktops)
+      lg: "3rem",   // For extra-large devices (large desktops)
+    },
+  }}
+>
+Client Testimonials
+</Typography>
+
             <Typography variant="body1" align="center" sx={{ mb: 4 }}>
                 “Fantastic service, all queries answered quickly and efficiently and in an easy to read manner so I could understand what was required every step of the way. Highly recommend this service.”
             </Typography>

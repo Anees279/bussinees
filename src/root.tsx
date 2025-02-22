@@ -8,6 +8,13 @@ import WhyChooseInZone from './layout/views/whychooes'
 import HowItWorks from './layout/views/how_it_work';
 import ClientTestimonial from './layout/views/testmoniol'
 import Most from './layout/views/mostpopular'
+import {Sudia} from './layout/views/services/sudia'
+import {Oman} from './layout/views/services/oman'
+import {Abudabi} from './layout/views/family/abudabi'
+import {Ajaman} from './layout/views/family/ajaman'
+import {Golden} from './layout/views/family/golden'
+import {Visadubai} from './layout/views/family/visadubai'
+import { Pro } from './layout/views/proservices/proservices';
 const Roots: React.FC = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -18,7 +25,13 @@ const Roots: React.FC = () => {
       <div style={{ flexGrow: 1, paddingBottom: '16px' }}>
         <Routes>
           <Route path="/" element={<HereSection />} />
-          
+          <Route path="/sudia" element={<Sudia/>} />
+          <Route path="/proservices" element={<Oman/>} />
+          <Route path="/dhabi" element={<Abudabi/>} />
+          <Route path="/ajman" element={<Ajaman/>} />
+          <Route path="/residency" element={<Golden/>} />
+          <Route path="/visab" element={<Visadubai/>} />
+          <Route path="/establishmaent" element={<Pro/>} />
           {/* If no route matches, redirect to home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

@@ -23,11 +23,10 @@ const pages = [
   },
   {
     name: 'Family Visa in Dubai', path: '/family', subPages: [
-      { name: 'Visit Visa And Tourist', path: '/Tourist' },
-      { name: 'Visa Dubai', path: '/Visab' },
-      { name: 'Golden Residency Visa in UAE', path: '/Residency' },
+      { name: 'Visit Visa And Tourist Visa Dubai', path: '/visab' },
+      { name: 'Golden Residency Visa in UAE', path: '/residency' },
       { name: 'Abu Dhabi family visa', path: '/dhabi' },
-      { name: 'Ajman Visa Services', path: '/Ajman' },
+      { name: 'Ajman Visa Services', path: '/ajman' },
     ]
   },
   {

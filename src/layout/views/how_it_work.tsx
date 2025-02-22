@@ -11,20 +11,31 @@ const HowItWorks = () => {
         {/* Line above the heading */}
         <Box sx={{ width: '120px', height: '3px', backgroundColor: '#FF6347', mb: 2 }}></Box>
 
-        <Typography
-          variant="h2"
-          component="h1"
-          align="center"
-          sx={{ fontWeight: 'bold', mb: 3, color: '#FF6347' }}
-        >
-          How It Works
-        </Typography>
+       
 
-        <Typography variant="body1" align="center">
+      
+      </Box>
+      <Typography
+  variant="h2"
+  component="h1"
+  align="center"
+  sx={{
+    fontWeight: "bold",
+    mb: 3,
+    color: "#FF6347",
+    fontSize: {
+      xs: "1.5rem", // For small devices (phones)
+      sm: "2rem",   // For medium devices (tablets)
+      md: "2.5rem", // For large devices (desktops)
+      lg: "3rem",   // For extra-large devices (large desktops)
+    },
+  }}
+>          How It Works
+
+</Typography>
+<Typography variant="body1" align="center">
           3 simple steps to start your dream business in no time
         </Typography>
-      </Box>
-
       {/* Main container for the cards */}
       <Grid container spacing={2} justifyContent="center">
         {/* Step 1 */}
