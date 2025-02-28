@@ -15,6 +15,14 @@ import {Ajaman} from './layout/views/family/ajaman'
 import {Golden} from './layout/views/family/golden'
 import {Visadubai} from './layout/views/family/visadubai'
 import { Pro } from './layout/views/proservices/proservices';
+import {Mainland} from './layout/views/bussiness/minlind'
+import { Medical } from './layout/views/bussiness/medical';
+import {Albasara} from './layout/views/bussiness/albasra'
+import {Beauty} from './layout/views/bussiness/beauty'
+import {Freezone} from './layout/views/bussiness/freezone'
+import {Visa} from './layout/views/bussiness/visa'
+import {Mofa} from './layout/views/bussiness/mofta'
+import {News} from "./layout/views/news/news"
 const Roots: React.FC = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -32,6 +40,14 @@ const Roots: React.FC = () => {
           <Route path="/residency" element={<Golden/>} />
           <Route path="/visab" element={<Visadubai/>} />
           <Route path="/establishmaent" element={<Pro/>} />
+          <Route path="/mainland" element={<Mainland/>} />
+          <Route path="/medical" element={<Medical/>} />
+          <Route path="/barsha" element={<Albasara/>} />
+          <Route path="/salon" element={<Beauty/>} />
+          <Route path="/freezone" element={<Freezone/>} />
+          <Route path="/permit" element={<Visa/>} />
+          <Route path="/embassy" element={<Mofa/>} />
+          <Route path="/news" element={<News/>} />
           {/* If no route matches, redirect to home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

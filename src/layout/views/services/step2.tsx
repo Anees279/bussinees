@@ -12,6 +12,8 @@ export const ImageContentSplit = () => {
                 width: '100%', // Full width of the viewport
                 minHeight: 'auto', // Dynamically adjusts height according to content
                 alignItems: 'stretch', // Ensures both sides stretch to fit the container
+                overflow: 'hidden', // Prevents horizontal overflow/scroll
+                boxSizing: 'border-box', // Ensures padding is included in the element's width and height
             }}
         >
             {/* Left Side Image */}
@@ -22,6 +24,7 @@ export const ImageContentSplit = () => {
                     justifyContent: 'center', // Horizontally center the image
                     alignItems: 'center', // Vertically center the image
                     height: '100%', // Ensure image box takes up available height
+                    padding: { xs: '10px', md: '0' }, // Padding for small screens
                 }}
             >
                 <img
@@ -29,6 +32,7 @@ export const ImageContentSplit = () => {
                     alt="Person with glasses"
                     style={{
                         width: '100%', // Make the image responsive, take full width
+                        maxWidth: '100%', // Prevent image from exceeding its container width
                         height: 'auto', // Maintain aspect ratio
                         objectFit: 'contain', // Ensure image fits well within the container
                     }}
@@ -44,14 +48,14 @@ export const ImageContentSplit = () => {
                     flexDirection: 'column',
                     justifyContent: 'center', // Center content vertically
                     padding: { xs: '20px', md: '40px' }, // Padding adjusts based on screen size
-                    height: '100%', // Ensure content box takes up available height
+                    boxSizing: 'border-box', // Includes padding in width/height calculations
                 }}
             >
                 {/* Headings and paragraphs */}
                 <Typography
                     variant="h3"
                     fontWeight="bold"
-                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '3rem', color: 'blue' } }}
+                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '3rem' }, color: 'blue' }}
                 >
                     Who is Eligible for the Saudi E-Visa?
                 </Typography>
@@ -65,7 +69,7 @@ export const ImageContentSplit = () => {
                 <Typography
                     variant="h3"
                     fontWeight="bold"
-                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '2.5rem', color: '#FF6347' } }}
+                    sx={{ mb: 2, fontSize: { xs: '1.5rem', md: '2.5rem' }, color: '#FF6347' }}
                 >
                     Required Documents for Saudi eVisa Application
                 </Typography>

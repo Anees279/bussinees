@@ -16,33 +16,23 @@ import { useState } from 'react';
 const pages = [
   { name: 'Home', path: '/home' },
   {
-    name: 'Service', path: '/service', subPages: [
+    name: 'Visa_Service', path: '/service', subPages: [
       { name: 'Sudia Arabia Visa', path: '/sudia' },
-      { name: 'Oman Visa In UAE', path: '/proservices' }
-    ]
-  },
-  {
-    name: 'Family Visa in Dubai', path: '/family', subPages: [
+      { name: 'Oman Visa In UAE', path: '/proservices' },
       { name: 'Visit Visa And Tourist Visa Dubai', path: '/visab' },
       { name: 'Golden Residency Visa in UAE', path: '/residency' },
       { name: 'Abu Dhabi family visa', path: '/dhabi' },
       { name: 'Ajman Visa Services', path: '/ajman' },
     ]
   },
+ 
   {
-    name: 'PRO Services in UAE', path: '/proservices', subPages: [
+    name: 'PRO_Services_in_UAE', path: '/proservices', subPages: [
       { name: 'Establishmaent Card In Dubai', path: '/establishmaent' },
-    ]
-  }, {
-    name: 'Attestataion Service', path: '/proservices', subPages: [
-      { name: 'Mofa Attestataion In UAE', path: '/mofa ' },
-      { name: 'World Wide Attestataion ', path: '/wide' },
-      { name: 'Certified True Copy Attestation', path: '/Certified' },
-      { name: 'Business Set Up in Dubai', path: '/business' }
     ]
   },
   {
-    name: 'Bussiness Set Up In Dubai', path: '/proservices', subPages: [
+    name: 'Bussiness_Set_Up_In_Dubai', path: '/proservices', subPages: [
       { name: 'Mainland-company-setup-services In UAE', path: '/mainland ' },
       { name: 'Medical-licensing-services in UAE ', path: '/medical' },
       { name: 'Al-barsha-business-setup ', path: '/barsha' },

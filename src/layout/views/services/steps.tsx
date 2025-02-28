@@ -15,7 +15,17 @@ const Steps = () => {
           variant="h2"
           component="h1"
           align="center"
-          sx={{ fontWeight: 'bold', mb: 3, color: '#FF6347' }}
+          sx={{
+            fontWeight: "bold",
+            mb: 3,
+            color: "#FF6347",
+            fontSize: {
+              xs: "1.5rem", // For small devices (phones)
+              sm: "2rem",   // For medium devices (tablets)
+              md: "2.5rem", // For large devices (desktops)
+              lg: "3rem",   // For extra-large devices (large desktops)
+            },
+          }}
         >
         Saudia Arabia E-Visa for UAE Resident
         </Typography>
