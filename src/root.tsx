@@ -13,6 +13,7 @@ import {Oman} from './layout/views/services/oman'
 import {Abudabi} from './layout/views/family/abudabi'
 import {Ajaman} from './layout/views/family/ajaman'
 import {Golden} from './layout/views/family/golden'
+import {Familyvisa} from './layout/views/family/familyvisa'
 import {Visadubai} from './layout/views/family/visadubai'
 import { Pro } from './layout/views/proservices/proservices';
 import {Mainland} from './layout/views/bussiness/minlind'
@@ -35,6 +36,9 @@ const Roots: React.FC = () => {
           <Route path="/" element={<HereSection />} />
           <Route path="/sudia" element={<Sudia/>} />
           <Route path="/proservices" element={<Oman/>} />
+          <Route path="/family" element={<Familyvisa/>} />
+
+          
           <Route path="/dhabi" element={<Abudabi/>} />
           <Route path="/ajman" element={<Ajaman/>} />
           <Route path="/residency" element={<Golden/>} />

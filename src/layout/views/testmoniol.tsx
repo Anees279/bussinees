@@ -60,7 +60,7 @@ const ClientTestimonial = () => {
     },
   }}
 >
-Client Testimonials
+What Our Clients Say
 </Typography>
 
             <Typography variant="body1" align="center" sx={{ mb: 4 }}>

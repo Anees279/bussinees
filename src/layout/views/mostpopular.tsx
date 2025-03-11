@@ -29,7 +29,7 @@ const Most = () => {
         </Typography>
 
         <Typography variant="body1" align="center">
-          Here are some of the popular free zones we recommend
+          Here are some of the popular Business Setup  we recommend. Each free zone has unique advantages, and our experts will guide you in selecting the right one based on your business goals.
         </Typography>
       </Box>
 
@@ -60,7 +60,7 @@ const Most = () => {
                 Meydan
               </Typography>
               <Typography variant="body2" color="textSecondary">
-                We provide an upfront price guarantee. In case you have a better quote, we will beat it!
+              Ideal for cost-effective company formation with premium business benefits.
               </Typography>
             </CardContent>
           </Card>
@@ -87,8 +87,7 @@ const Most = () => {
                 Shams
               </Typography>
               <Typography variant="body2" color="textSecondary">
-                Our company formation consultants in Dubai ensure the issuance of company licenses within
-                the shortest possible time.
+              – Best suited for startups, media, and creative industries
               </Typography>
             </CardContent>
           </Card>
@@ -119,8 +118,7 @@ const Most = () => {
                 IFZA
               </Typography>
               <Typography variant="body2" color="textSecondary">
-                We provide end-to-end business setup services in Dubai starting from company formation to UAE visa
-                stamping and bank account opening.
+              – Offers multiple license types, including trading, consultancy, and service-based businesses.
               </Typography>
             </CardContent>
           </Card>
@@ -147,7 +145,7 @@ const Most = () => {
                 RAKEZ
               </Typography>
               <Typography variant="body2" color="textSecondary">
-                You will only pay the government fee for setting up your free zone company.
+              – Provides affordable business setup options for industrial, commercial, and service-based companies.
               </Typography>
             </CardContent>
           </Card>
